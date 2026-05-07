@@ -100,3 +100,8 @@ def get_flightless_birds_habitat(animals):
     habitat = animals['birds']['flightless']['ratites']['large']['ostrich']['habitat']
     return f"The habitat of the ostrich is: {habitat}"
 print(get_flightless_birds_habitat(animals))
+
+def get_aquatic_mammals(animals):
+    cetaceans = animals.get('mammals').get('aquatic').get('cetaceans')
+    pinnipeds = animals.get('mammals').get('aquatic').get('pinnipeds')
+    return f"Aquatic mammals include: {cetaceans} and {pinnipeds}"
